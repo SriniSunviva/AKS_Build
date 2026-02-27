@@ -48,7 +48,7 @@ for f in $FILES; do
     grep --color=always -n "::set-output" "$f" || true
     echo
     echo "Suggested replacements (examples):"
-    echo "  Old: echo \"::set-output name=MYVAR::some value\""
+    echo "  Old: echo \"echo "MYVAR=some value\""" >> $GITHUB_OUTPUT
     echo "  New (bash): echo \"MYVAR=some value\" >> \$GITHUB_OUTPUT"
     echo "  New (powershell): Add-Content -Path \$env:GITHUB_OUTPUT -Value 'MYVAR=some value'"
   else
@@ -67,3 +67,4 @@ for f in $FILES; do
 done
 
 echo "Done."
+

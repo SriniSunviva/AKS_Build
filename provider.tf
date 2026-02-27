@@ -5,4 +5,3 @@ provider "azurerm" {
   tenant_id       = "1bef7fc5-c411-4aa1-ab0d-8ebf5e61ff65"
   subscription_id = "25e5fd9f-f77b-4db6-b7cd-6a8d12732039"
 }
-# while register apps, we can get cclient id and Secret.

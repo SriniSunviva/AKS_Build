@@ -5,8 +5,8 @@ terraform {
         version = "~> 4.0.0"
     }
   }
-  
- ####### required_version = ">=1.9.0"
+    features {}
+required_version = ">=1.9.0"
 }
 
 resource "azurerm_resource_group" "example" {
